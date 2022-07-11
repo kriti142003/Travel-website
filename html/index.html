@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lan="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width,intial-scale=1.0">
+        <!--==================== Remix Icons ====================-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <!--==================== Swiper CSS ====================-->
+        <link rel="stylesheet" href="swiper-bundle.min.css">
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="mystyle.css">
+
+        <title>Travelog</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo"><i class="ri-travesti-line"></i>Travelog</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">Home</a>   
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>   
+                        </li>
+                        <li class="nav__item">
+                            <a href="#place" class="nav__link">Popular Packages</a>   
+                        </li>
+                        <li class="nav__item">
+                            <a href="#tour" class="nav__link">India Tour</a>   
+                    </ul>        
+                    <li class="nav__item">
+                        <a href="Log.html" class="nav__link">Sign in</a>   
+                    </li>
+                </ul>
+                
+                <div class="nav__dark">
+                    <!-- Theme change button -->
+                    <span class="change-theme-name">Dark mode</span>
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+                </div>
+
+                <i class="ri-close-line nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-function-line"></i>
+            </div>
+        </nav>
+    </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <img src="video-3.mp4" alt="" class="home__img">
+
+                <div class="home__container container grid">
+                    <div class="home__data">
+                          <span class="home__data-subtitle">FIND A PERFECT HOLIDAY PLAN</span>
+                        <h1 class="home__data-title">Explore The <br> Best <b>Beautiful <br> Places</b></h1>
+                        <a href="#place" class="button">Explore</a>
+
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">Suggested<br>For You</h2>
+                        <p class="about__description">You can find the most beautiful and pleasant places at cheapest 
+                            prices.Choose the place and enjoy the trip carefree.We will guide you.
+                        </p>
+                        <a href="#tour" class="button">Find a place</a>
+                    </div>
+
+                    <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="IMG_5655.jpg" alt="Image" class="about__img-one">
+                        </div>
+
+                        <div class="about__img-overlay">
+                            <img src="IMG_4676.jpg" alt="Image" class="about__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--==================== EXPERIENCE ====================-->
+            <section class="experience section">
+                <h2 class="section__title">With Our Experience <br> We Will Serve You</h2>
+
+                <div class="experience__container container grid">
+                    <div class="experience__content grid">
+                        <div class="experience__data">
+                            <h2 class="experience__number">10</h2>
+                            <span class="experience__description">Years <br> Experience</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">15000+</h2>
+                            <span class="experience__description">Complete <br> tours</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">650+</h2>
+                            <span class="experience__description">Tourist <br> Destinations</span>
+                        </div>
+                    </div>
+
+                    <div class="experience__img grid">
+                        <div class="experience__overlay">
+                            <img src="IMG_5691.PNG" alt="IMG" class="experience__img-one">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== VIDEO ====================-->
+            <section class="video section">
+                <h2 class="section__title">Video Tour</h2>
+
+                <div class="video__container container">
+                    <p class="video__description">Find out more with our video of the most beautiful and 
+                        pleasant places for you and your family.
+                    </p>
+
+                    <div class="video__content">
+                        <video id="video-file">
+                            <source src="video-output-C761A571-9ED7-48EA-B168-FE0C895059CF.MOV" type="video/mp4">
+                        </video>
+
+                        <button class="button button--flex video__button" id="video-button">
+                            <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PLACES ====================-->
+            <section class="place section" id="place">
+                <h2 class="section__title">Popular Packages</h2>
+
+                <div class="place__container container grid">
+                    <!--==================== PLACES CARD 1 ====================-->
+                    <div class="place__card">
+                        <img src="IMG_5666.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4.4</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Singapore</h3>
+                                <span class="place__subtitle">Asia</span>
+                                <span class="place__price">$2490</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <!--==================== PLACES CARD 2 ====================-->
+                    <div class="place__card">
+                        <img src="IMG_5658.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">5.0</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Ireland</h3>
+                                <span class="place__subtitle">Europe</span>
+                                <span class="place__price">$1999</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <!--==================== PLACES CARD 3 ====================-->
+                    <div class="place__card">
+                        <img src="IMG_5667.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4.9</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Sydney</h3>
+                                <span class="place__subtitle">Australia</span>
+                                <span class="place__price">$2499</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <!--==================== PLACES CARD 4 ====================-->
+                    <div class="place__card">
+                        <img src="IMG_5672.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4.8</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Mauritius</h3>
+                                <span class="place__subtitle">Africa</span>
+                                <span class="place__price">$1899</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <!--==================== PLACES CARD 5 ====================-->
+                    <div class="place__card">
+                        <img src="IMG_5668.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4.7</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">New York</h3>
+                                <span class="place__subtitle">America</span>
+                                <span class="place__price">$3999</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+                     <!--==================== PLACES CARD 6 ====================-->
+                     <div class="place__card">
+                        <img src="IMG_5669.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4.5</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">London</h3>
+                                <span class="place__subtitle">Europe</span>
+                                <span class="place__price">$3499</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== INDIA TOUR ====================-->
+            <section class="tour section" id="tour">
+                <h2 class="section__title">India Tour</h2>
+                <div class="tour__container container swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!--==================== TOUR-1 ====================-->
+                       <div class="tour__content grid swiper-slide">
+                        <img src="IMG_5705.jpg" alt="" class="tour__img">
+
+                        <div class="tour__data">
+                            <h3 class="tour__title">Delhi</h3>
+                            <p class="tour__description">
+                                The monuments of Delhi's historical past are unique to Delhi. Delhi also has shopping 
+                                markets in some of the historically important places. Chandni Chowk, for instance, leaves 
+                                visitors awestruck with its numerous hidden gems. Furthermore, Delhi is also famous for 
+                                its street shops and street food as well.</p>
+                            <a href="#" class="button button--flex tour__button">
+                                View more<i class="ri-arrow-right-line"></i>
+                             </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>   
+
+
+                       <!--==================== TOUR-2 ====================-->
+                    <div class="tour__content grid swiper-slide">
+                        <img src="IMG_5703.jpg" alt="" class="tour__img">
+
+                        <div class="tour__data">
+                            <h3 class="tour__title">Goa</h3>
+                            <p class="tour__description">Located in the heart of the city, 
+                                the Calangute beach is one of the most beautiful beaches.
+                                The best Goa tour packages keep this one on priority as it 
+                                is clean and hosts a number of water adventures like parasailing, 
+                                jet-ski, and bumper rides.Famed as the architectural heritage from 
+                                the Portuguese time, the Fort Aguada is a prime sighting spot of goa packages.</p>
+                            <a href="#" class="button button--flex tour__button">
+                                View more<i class="ri-arrow-right-line"></i>
+                             </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>   
+
+
+                    <!--==================== TOUR-3 ====================-->
+                    <div class="tour__content grid swiper-slide">
+                        <img src="IMG_5704.jpg" alt="" class="tour__img">
+
+                        <div class="tour__data">
+                            <h3 class="tour__title">Rajasthan</h3>
+                            <p class="tour__description">You can book a ride on a hot air balloon in places like Pushkar, Ranthambore and Jaipur, and 
+                                sail through the Rajasthani sky as you watch these beautiful cities and their many attractions.Specially crafted Rajasthan 
+                                tour packages for adventure lovers can take you on a dune bashing session, </p>
+                            <a href="#" class="button button--flex tour__button">
+                                View more<i class="ri-arrow-right-line"></i>
+                             </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>   
+
+
+                    <!--==================== TOUR-4 ====================-->
+                    <div class="tour__content grid swiper-slide">
+                        <img src="IMG_4677.jpg" alt="" class="tour__img">
+
+                        <div class="tour__data">
+                            <h3 class="tour__title">Ladakh</h3>
+                            <p class="tour__description">
+                                Ladakh is most famous for breathtaking landscapes, the crystal 
+                                clear skies, the highest mountain passes, thrilling adventure activities, Buddhist Monasteries and festivals.
+                                Camping by the lakes and valleys like Pangong, Tso Moriri and Nubra Valley adds to the list of reasons why Ladakh.</p>
+                            <a href="#" class="button button--flex tour__button">
+                                View more<i class="ri-arrow-right-line"></i>
+                             </a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>   
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <!--==================== SUBSCRIBE ====================-->
+            <section class="subscribe section">
+                <div class="subscribe__bg">
+                    <div class="subscribe__container container">
+                        <h2 class="section__title subscribe__title">Subscribe Our <br> Newsletter</h2>
+                        <p class="subscribe__description">Subscribe to our blogs and get a 
+                            special perks.
+                        </p>
+    
+                        <form action="" class="subscribe__form">
+                            <input type="text" placeholder="Enter email" class="subscribe__input">
+                            <a href="blog.html" button class="button">Subscribe</a>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <h3 class="footer__title">Travel</h3>
+                        <p class="footer__description">You choose the <br> destination, 
+                            we offer you the <br> experience.
+                        </p>
+                        <div>
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="footer__social">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">About</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">About Us</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Features</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">New & Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Company</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Team</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Plan y Pricing</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Become a member</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Support</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">FAQs</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Support Center</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__rights">
+                    <div class="footer__terms">
+                        <a href="#" class="footer__terms-link">Terms & Agreements</a>
+                        <a href="#" class="footer__terms-link">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+         <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+        
+        <!--=============== SWIPER JS ===============-->
+        <script src="swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="main.js"></script>
+
+    </body>
+</html>
